@@ -1,0 +1,72 @@
+
+/* Corporate colours*/
+$black-pearl: #061e37;
+$tower-gray: #b0bec5;
+$java: #1de9b6;
+$white: #fff;
+$cerulean: #0bb4bd;
+$regent-gray: #78909c; 
+$alabaster: #fafafa;
+
+
+/* colours by block counts*/
+$anakiwa: #80d8ff;
+$malibu:  #82b1ff;
+$heliotrope-dark: #b388ff;
+$heliotrope-light: #ea80fc;
+ 
+/*Functional variables*/
+$first-color: $black-pearl; 
+$second-color: $tower-gray;
+$third-color: $regent-gray;
+$forth-color: $white;
+$color-button: $java;
+$bg-color: $cerulean;
+$bg-color-contact-us: $alabaster; 
+$body-font: 'Raleway', sans-serif;
+
+$font-italic: italic;
+
+/* $fs-first-title: 3.4375rem; /* 55/16 */  
+/* $fs-second-title: 2.8125rem; /* 45/16 */ 
+/* $fs-third-title: 1.625rem; /* 25/16 */ 
+/* $fs-forth-title: 1.25rem; /* 12/16 */ 
+/* $fs-firth-title: 1.125rem; /* 18/16 */
+/* $fs-text-s: 0.9375rem; /* 15/16 */ 
+/* $fs-text-xs: 0.75rem; /* 12/16 */  
+
+@function strip-unit($num) {
+	@return $num / ($num * 0 + 1);
+}
+
+@function rem($num) {
+	@return (strip-unit($num) / 16) * 1rem;
+}
+
+$base: rem(4px);
+
+$fs-text-xs:      rem(12px);
+$fs-text-s:       rem(15px); 
+$fs-text-m:       rem(18px);
+$fs-text-l:       rem(20px);
+$fs-text-xl:      rem(25px); 
+$fs-text-xxl:     rem(45px); 
+$fs-text-xxxl:    rem(55px);
+
+
+$breakpoint-sm-min: 576px;
+$breakpoint-xs-max: $breakpoint-sm-min - 1px;
+$breakpoint-md-min: 768px;
+$breakpoint-sm-max: $breakpoint-md-min - 1px;
+$breakpoint-lg-min: 992px;
+$breakpoint-md-max: $breakpoint-lg-min - 1px;
+$breakpoint-xl-min: 1200px;
+$breakpoint-lg-max: $breakpoint-xl-min - 1px;
+$breakpoint-xxl-min: 1400px;
+$breakpoint-xl-max: $breakpoint-xxl-min - 1px;
+
+
+
+
+
+
